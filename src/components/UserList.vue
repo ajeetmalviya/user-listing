@@ -9,11 +9,10 @@
 
     <div class="row">
       <div class="col-md-12">
-         <label for="search" id="lblSearch">Search by any keyword : </label>
+        <label for="search" id="lblSearch">Search by any keyword :</label>
         <input type="text" id="txtSearch" v-model="search" placeholder="Filter users" />
-        
       </div>
-      </div>
+    </div>
     <div class="row">
       <div class="col-12">
         <table
@@ -133,7 +132,7 @@ export default {
   },
 
   computed: {
-    sortedUsers() {    
+    sortedUsers() {
       return this.users.filter((rows) => {
         for (var row in rows) {
           if (String(rows[row]).indexOf(this.search) !== -1) {
@@ -155,7 +154,8 @@ export default {
 
 <!--style section-->
 <style>
-#txtSearch, #lblSearch {
+#txtSearch,
+#lblSearch {
   float: left;
 }
 </style>
